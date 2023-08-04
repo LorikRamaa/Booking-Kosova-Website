@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Multipurpose Online Booking Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/erorr.css" />
+    <!-- <link rel="stylesheet" href="style.css" />  -->
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar_container">
+            <div class="first_div_nav">
+              <a href="index.html"
+                ><img src="./assets/images/logo.svg" alt="" class="logo"
+              /></a>
+              <button
+                class="menu-toggler"
+                id="menu_toggler"
+                onclick="navbarToggle()"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="nav_links">
+              <div class="first_nav_links" id="first_nav_links">
+                <div class="dropdown">
+                  <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                  <div class="dropdown_menu">
+                    <a href="about.html">About </a>
+                    <a href="contact.html">Contact </a>
+                    <div class="submenu">
+                      <a href="#"
+                        >Authentication <i class="fa-solid fa-ellipsis"></i
+                      ></a>
+                      <div class="submenu_menu">
+                        <a href="signin.html">Sign in</a>
+                        <a href="signup.html">Sign up</a>
+                        <a href="forgot-password.html">Forgot Password</a
+                        ><a href="two-factor-auth.html"
+                          >Two factor authentication</a
+                        >
+                      </div>
+                    </div>
+                    <a href="erorr.html">Erorr 404</a>
+                    <a href="coming-soon.html">Coming soon</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="#"
+                    >Accounts<i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdown_menu">
+                    <div class="submenu">
+                      <a href="#"
+                        >User Profile <i class="fa-solid fa-ellipsis"></i
+                      ></a>
+                      <div class="submenu_menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="account-bookings.html">My Bookings</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Delete Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side_buttons">
+              <i class="fa-solid fa-sun"></i>
+              <div class="search_dropdown" id="search_dropdown">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                <div
+                  class="dropdown_menu dropdown_left_auto"
+                  style="flex-direction: row"
+                >
+                  <input type="text" placeholder="Search..." />
+                  <button type="submit" class="dropdown_btn">Search</button>
+                </div>
+              </div>
+              <button>
+                <a href="signup.html"
+                  ><i class="fa-solid fa-right-to-bracket"></i>Sign up</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home -->
+    <section id="home">
+      <div class="container">
+        <div class="home_content">
+          <div class="img">
+            <img src="./assets/signup_images/error.svg" alt="" />
+          </div>
+          <div class="home_text">
+            <h1 class="erorr_nr">404</h1>
+            <h1 class="ohno">Oh no, something went wrong!</h1>
+            <p>
+              Either something went wrong or this page doesn't exist anymore.
+            </p>
+            <button class="big_btn">
+              <a href="index.html" class="homepage">Take me to Homepage</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <!-- footer -->
+
+    <!-- footer -->
+
+    <section id="footer">
+      <div class="container">
+        <div class="footer_rows">
+          <div class="footer_about_row">
+            <img src="./assets/images/logo-light.svg" alt="" />
+            <div class="footer_about_text">
+              <p>
+                Departure defective arranging rapturous did believe him all had
+                supported.
+              </p>
+              <p href="#"><i class="fa-solid fa-phone"></i>+383 44 547 028</p>
+              <p href="#">
+                <i class="fa-regular fa-envelope"></i>lorikrama07@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="forths_links_footer">
+            <div class="footer_page_row">
+              <h3>Pages</h3>
+              <br />
+              <a href="about.html">About us</a>
+              <a href="contact.html">Contact us</a>
+              <a href="#">News and Bloging</a>
+              <a href="#">Meet a Team</a>
+            </div>
+            <div class="footer_links_row">
+              <h3>Links</h3>
+              <br />
+              <a href="signup.html">Sign up</a>
+              <a href="signin.html">Sign ip</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Cookie</a>
+              <a href="#">Support</a>
+            </div>
+            <div class="footer_global_row">
+              <h3>Global Sites</h3>
+              <br />
+              <p>India</p>
+              <p>California</p>
+              <p>Indonesia</p>
+              <p>Canada</p>
+              <p>Malasia</p>
+            </div>
+            <!-- <div class="footer_booking_row">
+            <h3>Booking</h3>
+            <br />
+            <a href="#"><i class="fa-solid fa-building"></i>Hotel</a>
+            <a href="#"><i class="fa-solid fa-plane"></i>Flight</a
+            ><a href="#"><i class="fa-solid fa-earth-americas"></i>Tour</a
+            ><a href="#"> <i class="fa-solid fa-car"></i>Cab </a>
+          </div> -->
+          </div>
+        </div>
+
+        <div class="footer_payment_follow_row">
+          <div class="payment_row">
+            <h3>Payment & Security</h3>
+            <div class="payment_img">
+              <img src="./assets/images/paypal.svg" alt="" />
+              <img src="./assets/images/visa.svg" alt="" />
+              <img src="./assets/images/mastercard.svg" alt="" />
+              <img src="./assets/images/expresscard.svg" alt="" />
+            </div>
+          </div>
+          <div class="follow_row">
+            <h3>Follow us on</h3>
+            <div class="follow_row_icons_footer">
+              <a href="https://www.facebook.com/lorik.rama.547/" class="fb">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/lorikramaa/" class="ig">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" class="tw">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/lorikramaa/" class="lk">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright_col">
+          <div class="first_col">
+            <p>
+              Copyrights <a href="#">&copy;2023 Lorik Rama</a>. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="second_col">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- script -->
+    <script>
+      function search() {
+        document
+          .getElementById("search_dropdown")
+          .classList.toggle("search_dropdown_active");
+      }
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

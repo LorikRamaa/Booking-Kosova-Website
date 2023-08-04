@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Multipurpose Online Booking Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <!-- <link rel="stylesheet" href="style.css" />  -->
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar_container">
+            <div class="first_div_nav">
+              <a href="index.html"
+                ><img src="./assets/images/logo.svg" alt="" class="logo"
+              /></a>
+              <button
+                class="menu-toggler"
+                id="menu_toggler"
+                onclick="navbarToggle()"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="nav_links">
+              <div class="first_nav_links" id="first_nav_links">
+                <div class="dropdown">
+                  <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                  <div class="dropdown_menu">
+                    <a href="about.html">About </a>
+                    <a href="contact.html">Contact </a>
+                    <a href="signin.html">Sign in</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="#"
+                    >Accounts<i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdown_menu">
+                    <div class="submenu">
+                      <a href="#"
+                        >User Profile <i class="fa-solid fa-ellipsis"></i
+                      ></a>
+                      <div class="submenu_menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="account-bookings.html">My Bookings</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="delete-account.html">Delete Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side_buttons">
+              <i class="fa-solid fa-sun"></i>
+              <div class="search_dropdown" id="search_dropdown">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                <div
+                  class="dropdown_menu dropdown_left_auto"
+                  style="flex-direction: row"
+                >
+                  <input type="text" placeholder="Search..." id="search" />
+                  <button type="submit" class="dropdown_btn">Search</button>
+                </div>
+              </div>
+              <button>
+                <a href="signup.html"
+                  ><i class="fa-solid fa-right-to-bracket"></i>Sign up</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect_form">
+      <div class="container">
+        <h1 class="connect_h1">Connect to know each other</h1>
+        <div class="connect_boxes">
+          <div class="connect_box">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Call me</h3>
+            <div class="phone_nr">
+              <p class="phone_nr_p">+383 44 547 028</p>
+            </div>
+          </div>
+          <div class="connect_box">
+            <i class="fa-solid fa-inbox"></i>
+            <h3>Email me</h3>
+            <p class="phone_nr">Lorikrama07@gmail.com</p>
+          </div>
+          <div class="connect_box">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Social Media</h3>
+            <div class="follow_row">
+              <div class="follow_row_icons_footer">
+                <a href="https://www.facebook.com/lorik.rama.547/" class="fb">
+                  <i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/lorikramaa/" class="ig">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="" class="tw">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lorikramaa/" class="lk">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section id="contact_form">
+      <div class="container">
+        <div class="contact_form">
+          <div class="contact_img">
+            <img src="./assets/contact_images/contact.svg" alt="" />
+          </div>
+          <div class="contact_inputs">
+            <h1>Send us message</h1>
+            <div class="inputs">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="first_input"
+                placeholder="Your Name..."
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="first_input"
+                placeholder="Your email..."
+              />
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="Mobile Number..."
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message..."
+              ></textarea>
+              <div class="checkbox">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember" id="remember_label"
+                  >By submitting this form you agree to our terms and
+                  conditions.</label
+                >
+              </div>
+              <div class="send_msg">Send Message</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="position-absolute dots">
+        <svg class="fill-orange" width="104.2px" height="95.2px">
+          <circle cx="2.6" cy="92.6" r="2.6"></circle>
+          <circle cx="2.6" cy="77.6" r="2.6"></circle>
+          <circle cx="2.6" cy="62.6" r="2.6"></circle>
+          <circle cx="2.6" cy="47.6" r="2.6"></circle>
+          <circle cx="2.6" cy="32.6" r="2.6"></circle>
+          <circle cx="2.6" cy="17.6" r="2.6"></circle>
+          <circle cx="2.6" cy="2.6" r="2.6"></circle>
+          <circle cx="22.4" cy="92.6" r="2.6"></circle>
+          <circle cx="22.4" cy="77.6" r="2.6"></circle>
+          <circle cx="22.4" cy="62.6" r="2.6"></circle>
+          <circle cx="22.4" cy="47.6" r="2.6"></circle>
+          <circle cx="22.4" cy="32.6" r="2.6"></circle>
+          <circle cx="22.4" cy="17.6" r="2.6"></circle>
+          <circle cx="22.4" cy="2.6" r="2.6"></circle>
+          <circle cx="42.2" cy="92.6" r="2.6"></circle>
+          <circle cx="42.2" cy="77.6" r="2.6"></circle>
+          <circle cx="42.2" cy="62.6" r="2.6"></circle>
+          <circle cx="42.2" cy="47.6" r="2.6"></circle>
+          <circle cx="42.2" cy="32.6" r="2.6"></circle>
+          <circle cx="42.2" cy="17.6" r="2.6"></circle>
+          <circle cx="42.2" cy="2.6" r="2.6"></circle>
+          <circle cx="62" cy="92.6" r="2.6"></circle>
+          <circle cx="62" cy="77.6" r="2.6"></circle>
+          <circle cx="62" cy="62.6" r="2.6"></circle>
+          <circle cx="62" cy="47.6" r="2.6"></circle>
+          <circle cx="62" cy="32.6" r="2.6"></circle>
+          <circle cx="62" cy="17.6" r="2.6"></circle>
+          <circle cx="62" cy="2.6" r="2.6"></circle>
+          <circle cx="81.8" cy="92.6" r="2.6"></circle>
+          <circle cx="81.8" cy="77.6" r="2.6"></circle>
+          <circle cx="81.8" cy="62.6" r="2.6"></circle>
+          <circle cx="81.8" cy="47.6" r="2.6"></circle>
+          <circle cx="81.8" cy="32.6" r="2.6"></circle>
+          <circle cx="81.8" cy="17.6" r="2.6"></circle>
+          <circle cx="81.8" cy="2.6" r="2.6"></circle>
+          <circle cx="101.7" cy="92.6" r="2.6"></circle>
+          <circle cx="101.7" cy="77.6" r="2.6"></circle>
+          <circle cx="101.7" cy="62.6" r="2.6"></circle>
+          <circle cx="101.7" cy="47.6" r="2.6"></circle>
+          <circle cx="101.7" cy="32.6" r="2.6"></circle>
+          <circle cx="101.7" cy="17.6" r="2.6"></circle>
+          <circle cx="101.7" cy="2.6" r="2.6"></circle>
+        </svg>
+      </figure>
+    </section>
+    <br /><br /><br />
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2737125490344!2d20.959703915387113!3d42.82483171361589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13535bf904a0b329%3A0x9c767fc069643180!2sInnovation%20Academy!5e0!3m2!1sen!2s!4v1678743732041!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map"
+      ></iframe>
+    </div>
+    <br /><br /><br />
+
+    <section id="footer">
+      <div class="container">
+        <div class="footer_rows">
+          <div class="footer_about_row">
+            <img src="./assets/images/logo-light.svg" alt="" />
+            <div class="footer_about_text">
+              <p>
+                Departure defective arranging rapturous did believe him all had
+                supported.
+              </p>
+              <p href="#"><i class="fa-solid fa-phone"></i>+383 44 547 028</p>
+              <p href="#">
+                <i class="fa-regular fa-envelope"></i>lorikrama07@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="forths_links_footer">
+            <div class="footer_page_row">
+              <h3>Pages</h3>
+              <br />
+              <a href="about.html">About us</a>
+              <a href="contact.html">Contact us</a>
+              <a href="account-bookings.html">Bookings</a>
+              <a href="coming-soon.html">Coming soon</a>
+            </div>
+            <div class="footer_links_row">
+              <h3>Links</h3>
+              <br />
+              <a href="signup.html">Sign up</a>
+              <a href="signin.html">Sign in</a>
+              <a href="about.html">About</a>
+              <a href="profile.html">Profile</a>
+            </div>
+            <!-- <div class="footer_global_row">
+              <h3>Global Sites</h3>
+              <br />
+              <p>India</p>
+              <p>California</p>
+              <p>Indonesia</p>
+              <p>Canada</p>
+              <p>Malasia</p>
+            </div> -->
+            <!-- <div class="footer_booking_row">
+              <h3>Booking</h3>
+              <br />
+              <a href="#"><i class="fa-solid fa-building"></i>Hotel</a>
+              <a href="#"><i class="fa-solid fa-plane"></i>Flight</a
+              ><a href="#"><i class="fa-solid fa-earth-americas"></i>Tour</a
+              ><a href="#"> <i class="fa-solid fa-car"></i>Cab </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="footer_payment_follow_row">
+          <!-- <div class="payment_row">
+            <h3>Payment & Security</h3>
+            <div class="payment_img">
+              <img src="./assets/images/paypal.svg" alt="" />
+              <img src="./assets/images/visa.svg" alt="" />
+              <img src="./assets/images/mastercard.svg" alt="" />
+              <img src="./assets/images/expresscard.svg" alt="" />
+            </div>
+          </div> -->
+          <div class="follow_row footer_follow_row">
+            <h3>Follow us on</h3>
+            <div class="follow_row_icons_footer">
+              <a href="https://www.facebook.com/lorik.rama.547/" class="fb">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/lorikramaa/" class="ig">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" class="tw">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/lorikramaa/" class="lk">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright_col">
+          <div class="first_col">
+            <p>
+              Copyrights <a href="#">&copy;2023 Lorik Rama</a>. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="second_col">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- script -->
+    <script>
+      function search() {
+        document
+          .getElementById("search_dropdown")
+          .classList.toggle("search_dropdown_active");
+      }
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

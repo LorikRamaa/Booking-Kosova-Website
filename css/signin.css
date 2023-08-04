@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color: #747579;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+a {
+  color: #5143d9;
+}
+section#signin {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin_content {
+  width: 100%;
+  box-shadow: 0px 0px 40px rgb(29 58 83 / 10%) !important;
+  height: 90vh;
+  border-radius: 20px;
+}
+.signin_container {
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.signin_image {
+  border-right: 1px solid #f1f1f2;
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin_image img {
+  width: 80%;
+}
+.signin_form {
+  padding: 50px;
+  width: 50%;
+}
+.signin_form img {
+  width: 50px;
+}
+.welcome {
+  font-size: 35px;
+  color: #000;
+}
+.form form {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.signup_input {
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  width: 95%;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid #c5c5c7;
+}
+.remember_row {
+  display: flex;
+  justify-content: space-between;
+}
+.signup_input:focus {
+  border-color: #5143d9;
+}
+.checkbox {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+#remember[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #dfdfe3 !important;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#remember[type="checkbox"]::after {
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f00c";
+  border: 1px solid #5143d9;
+  color: #fff;
+  transition: all 0.3s linear;
+  display: none;
+}
+
+#remember[type="checkbox"]:checked::after {
+  display: block;
+  background-color: #5143d9;
+  border-radius: 5px;
+}
+i.fa-solid.fa-eye-slash {
+  position: absolute;
+  top: 46.5%;
+  cursor: pointer;
+  left: 77%;
+}
+i.fa-solid.fa-eye {
+  position: absolute;
+  top: 46.5%;
+  cursor: pointer;
+  left: 77%;
+}
+.submit_button {
+  width: 100%;
+  display: flex;
+  margin: 15px 0;
+}
+.submit_button button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  width: 100%;
+  outline: none;
+  margin: 10px 0;
+  border: none;
+  background-color: #5143d9;
+  color: #fff;
+  font-weight: 600;
+}
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+hr {
+  margin: 1rem 0;
+  color: #85878a;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+.signin_with {
+  position: relative;
+}
+.sign_with_p {
+  position: absolute;
+  left: 36%;
+  background-color: #fff;
+  padding: 0 10px;
+  top: 14%;
+}
+.google,
+.facebook {
+  background-color: #f5f5f6;
+  border: none;
+  border-radius: 10px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s linear;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.google i,
+.facebook i {
+  margin-right: 10px;
+}
+.google i {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.facebook i {
+  color: #5143d9;
+}
+.google:hover,
+.facebook:hover {
+  background-color: #dfdfe3;
+}
+.copyright {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+/* 2fa */
+.fa2 {
+  display: block;
+  width: 100%;
+  margin: 20px 0 15px 0;
+  padding: 1.2rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c5c5c7;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  appearance: none;
+  border-radius: 0.5rem;
+  transition: 0.3s linear;
+  text-align: center;
+}
+.fa2:focus {
+  border-color: #5143d9;
+}
+.inputs_2fa {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px !important;
+}
+@media screen and (max-width: 800px) {
+  .signin_image {
+    display: none;
+  }
+  .signin_content {
+    width: 90vw;
+  }
+  .signin_form {
+    padding: 50px;
+    width: 100%;
+  }
+  i.fa-solid.fa-eye-slash {
+    /* display: none; */
+  }
+}

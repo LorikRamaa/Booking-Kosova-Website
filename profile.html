@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Multipurpose Online Booking Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="navbar">
+        <div class="container">
+          <div class="nav_container">
+            <div class="align">
+              <div class="first_div_nav">
+                <div class="logo">
+                  <img
+                    src="./assets/images/logo.svg"
+                    alt="logo"
+                    class="logo"
+                    srcset=""
+                  />
+                </div>
+                <div class="first_nav_links" id="first_nav_links">
+                  <div class="dropdown">
+                    <a href="#"
+                      >Pages<i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div class="dropdown_menu">
+                      <a href="about.html">About </a>
+                      <a href="contact.html">Contact </a>
+                      <a href="signin.html">Sign in</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a href="#"
+                      >Accounts<i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div class="dropdown_menu">
+                      <div class="submenu">
+                        <a href="#"
+                          >User Profile <i class="fa-solid fa-ellipsis"></i
+                        ></a>
+                        <div class="submenu_menu">
+                          <a href="profile.html">My Profile</a>
+                          <a href="account-bookings.html">My Bookings</a>
+                          <a href="settings.html">Settings</a>
+                          <a href="delete-account.html">Delete Profile</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="third_nav_links">
+                <button
+                  class="menu-toggler"
+                  id="menu_toggler"
+                  onclick="navbarToggle()"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="dropdown_notification" id="dropdown_notification">
+                  <a
+                    href="#"
+                    class="notification_button"
+                    onclick="notification() "
+                    ><i class="fa-regular fa-bell"></i>
+                    <span class="animation_blink"></span
+                  ></a>
+                  <div class="dropdown_menu notification_menu">
+                    <div class="title_notification">
+                      <h3>
+                        Notification
+                        <span class="new_notifications">4 new</span>
+                      </h3>
+                      <a href="#">Clear all</a>
+                    </div>
+                    <div class="first_notification">
+                      <h4>New! Booking flights from New York ✈️</h4>
+                      <p class="notification_text">
+                        Find the flexible ticket on flights around the world.
+                        Start searching today <br />
+                        <span>Wednesday</span>
+                      </p>
+                    </div>
+                    <div class="second_notification">
+                      <h4>
+                        Sunshine saving are here 🌞 save 30% or more on a stay
+                      </h4>
+                      <p class="notification_text">15 Nov 2022</p>
+                    </div>
+                    <div class="third_notification">
+                      <a href="#">See all incoming activity</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="dropdown_profile_button"
+                  id="dropdown_profile_button"
+                >
+                  <a href="#" class="profile_button">
+                    <img
+                      src="./assets/images/avatar.png"
+                      class="avatar"
+                      alt=""
+                      srcset=""
+                      onclick="profile()"
+                    />
+                  </a>
+                  <div class="dropdown_menu profile_menu">
+                    <div class="profile_name">
+                      <img
+                        src="./assets/images/avatar.png"
+                        class="profile_picture_menu avatar"
+                        alt=""
+                      />
+                      <div class="profile_desc">
+                        <h3 class="fullnameTitle">Lorik Rama</h3>
+                        <p class="profile_email">lorikrama07@gmail.com</p>
+                      </div>
+                    </div>
+                    <div class="profile_options">
+                      <a
+                        href="account-bookings.html"
+                        class="dropdown_item_profile"
+                        ><i class="fa-regular fa-bookmark"></i> My Bookings</a
+                      ><a href="payment.html" class="dropdown_item_profile"
+                        ><i class="fa-solid fa-ticket"></i>Payment</a
+                      >
+                      <a href="settings.html" class="dropdown_item_profile"
+                        ><i class="fa-solid fa-gear"></i> Settings</a
+                      >
+                      <a
+                        href="delete-account.html"
+                        class="dropdown_item_profile"
+                        ><i class="fa-solid fa-circle-info"></i> Delete
+                        account</a
+                      >
+                      <a href="#" class="signout_button"
+                        ><i class="fa-solid fa-power-off"></i> Sign Out</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="upgrade_button">
+                  <a href="#"> <i class="fa-solid fa-bolt"></i> Upgrade Now</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mobile button profile-->
+    <div class="container">
+      <div
+        class="menu_toggler_profile"
+        id="menu_toggler_profile"
+        onclick="profileMenuMobile()"
+      >
+        <i class="fa-solid fa-sliders" onclick="profileMenuMobile()"
+          ><span>Menu</span></i
+        >
+      </div>
+    </div>
+
+    <main id="all_content">
+      <div class="container">
+        <div class="all_content">
+          <div class="profile_mobile_menu" id="profile_mobile_menu">
+            <section id="profile_card">
+              <i class="fa-solid fa-xmark" onclick="profileMenuMobile()"></i>
+
+              <div class="profile_card">
+                <div class="image_container">
+                  <img src="./assets/images/avatar.png" id="profile_p" alt="" />
+                  <div class="card_desc">
+                    <h3 id="fullnameTitle">Lorik Rama</h3>
+                    <a href="#" class="helloemail">lorikrama07@gmail.com</a>
+                  </div>
+                </div>
+                <div class="profile_links">
+                  <a href="profile.html" class="profile_active"
+                    ><i class="fa-regular fa-user"></i> My Profile</a
+                  >
+                  <a href="account-bookings.html"
+                    ><i class="fa-solid fa-ticket"></i> My Bookings</a
+                  >
+                  <a href="payment.html"
+                    ><i class="fa-solid fa-ticket"></i> Payment</a
+                  >
+                  <a href="settings.html"
+                    ><i class="fa-solid fa-gear"></i>Settings</a
+                  >
+                  <a href="delete-account.html"
+                    ><i class="fa-solid fa-trash-can"></i>Delete Profile</a
+                  >
+                  <a href="#" class="color_red"
+                    ><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="body_overlay" id="body_overlay"></div>
+          <section id="profile_information">
+            <div class="complete_profile">
+              <div class="complete_profile_info">
+                <h3>Complete your profile</h3>
+                <div class="slider_bg">
+                  <div class="slider_fg">
+                    <div class="slider_number"><span> 85%</span></div>
+                  </div>
+                </div>
+                <p class="info_text">
+                  Get the best out of booking by adding the remaining details!
+                </p>
+                <div class="three_verifications">
+                  <div class="verify_email">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Verified Email</span>
+                  </div>
+                  <div class="verified_mobile_number">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Verified Mobile Number</span>
+                  </div>
+                  <div class="basic_info">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Complete Basic Info</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="personal_information">
+              <div class="personal_information_content">
+                <h1 class="pi_title">Personal Information</h1>
+                <div class="upload_images">
+                  <p class="gray_text" style="margin-bottom: 15px">
+                    Upload your profile photo<span class="all_sign">*</span>
+                  </p>
+                  <div class="labels">
+                    <label for="upload_image">
+                      <img
+                        src="./assets/images/avatar.png"
+                        class="avatar_info"
+                        alt=""
+                      /> </label
+                    ><label for="upload_image" class="change_btn">Change</label>
+                    <input type="file" name="upload_image" id="upload_image" />
+                  </div>
+                  <div class="forms">
+                    <div class="col">
+                      <label for="name"
+                        >Full name<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Full name"
+                        value="Lorik Rama"
+                      />
+                    </div>
+                    <br />
+                    <div class="col">
+                      <label for="name"
+                        >Email address<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email address"
+                        value="lorikrama07@gmail.com"
+                      />
+                    </div>
+                    <br />
+
+                    <div class="col">
+                      <label for="name"
+                        >Mobile number<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="text"
+                        name="number"
+                        id="number"
+                        placeholder="Mobile number"
+                        value="044 547 028"
+                      />
+                    </div>
+                    <br />
+
+                    <div class="col">
+                      <label for="nationality"
+                        >Nationality<span class="all_sign">*</span></label
+                      ><br />
+                      <select name="nationality" id="Nationality">
+                        <option value="Select Your Country">
+                          Select Your Country
+                        </option>
+                        <option value="USA">USA</option>
+                        <option value="Paris" selected>Kosovo</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="number"
+                        >Date of Birth<span class="all_sign">*</span></label
+                      ><br />
+                      <input
+                        type="text"
+                        name="number"
+                        id="number"
+                        placeholder="Mobile number"
+                        value="17 Mar 2007"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="checkbox"
+                        >Select gender<span class="all_sign">*</span></label
+                      >
+                      <div class="col_checkbox">
+                        <div class="checkbox">
+                          <input type="radio" checked name="male" id="male" />
+                          <label for="male">Male</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" name="female" id="female" />
+                          <label for="female">Female</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" name="other" id="other" />
+                          <label for="other">Other</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col_textarea">
+                      <label for="address"
+                        >Address<span class="all_sign">*</span></label
+                      >
+                      <textarea name="address" id="address" cols="30" rows="10">
+Vushtrri, 42000 Kosovo</textarea
+                      >
+                    </div>
+                    <div class="col col_button">
+                      <button type="submit" class="save_changes">
+                        Save Changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="update_email">
+              <div class="email_content">
+                <div class="pi_title">
+                  <h1>Update email</h1>
+                  <p class="gray_text">
+                    Your current email address is
+                    <span>lorikrama07@gmail.com</span>
+                  </p>
+                </div>
+                <br />
+                <div class="enter_email">
+                  <label for="enteremail"
+                    >Enter your new email id<span class="all_sign"
+                      >*</span
+                    ></label
+                  >
+
+                  <input
+                    type="email"
+                    id="enteremail"
+                    placeholder="Enter your email id"
+                  />
+                  <div class="col_button">
+                    <button type="submit" id="saveEmail" class="save_changes">
+                      Save Email
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="update_pwd">
+              <div class="pi_title">
+                <h1>Update Password</h1>
+                <p class="gray_text">
+                  Your current email address is
+                  <span>lorikrama07@gmail.com</span>
+                </p>
+              </div>
+              <div class="pdw_input">
+                <div class="row">
+                  <label for="pwdone"
+                    >Current Password<span class="all_sign">*</span></label
+                  ><br />
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="Enter current password"
+                  />
+                </div>
+                <div class="row">
+                  <label for="pwdone"
+                    >Enter new password<span class="all_sign">*</span></label
+                  ><br />
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="Enter new password "
+                  />
+                </div>
+                <div class="row">
+                  <label for="pwdone"
+                    >Confirm new password<span class="all_sign">*</span></label
+                  ><br />
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="Confirm new password"
+                  />
+                </div>
+                <div class="col_button">
+                  <button type="submit" class="save_changes">
+                    Save Password
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <br /><br />
+    <!-- footer -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer_content">
+          <div class="logo">
+            <img src="./assets/images/logo-light.svg" alt="" />
+          </div>
+          <div class="text">
+            Copyrights ©2022 Lorik Rama. All rights reserved.
+          </div>
+          <div class="footer_sm">
+            <a href="#" class="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="instagram"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="twitter"
+              ><i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="linkedin"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="app.js"></script>
+  </body>
+</html>

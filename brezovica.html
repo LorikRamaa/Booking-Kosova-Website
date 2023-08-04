@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Multipurpose Online Booking Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/emerald.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="style.css" />  -->
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar_container">
+            <div class="first_div_nav">
+              <a href="index.html"
+                ><img src="./assets/images/logo.svg" alt="" class="logo"
+              /></a>
+              <button
+                class="menu-toggler"
+                id="menu_toggler"
+                onclick="navbarToggle()"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="nav_links">
+              <div class="first_nav_links" id="first_nav_links">
+                <div class="dropdown">
+                  <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                  <div class="dropdown_menu">
+                    <a href="about.html">About </a>
+                    <a href="contact.html">Contact </a>
+                    <a href="signin.html">Sign in</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="#"
+                    >Accounts<i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdown_menu">
+                    <div class="submenu">
+                      <a href="#"
+                        >User Profile <i class="fa-solid fa-ellipsis"></i
+                      ></a>
+                      <div class="submenu_menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="account-bookings.html">My Bookings</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="delete-account.html">Delete Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side_buttons">
+              <!-- <i class="fa-solid fa-sun" onclick="changeBg()"></i> -->
+              <div class="search_dropdown" id="search_dropdown">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                <div
+                  class="dropdown_menu dropdown_left_auto"
+                  style="flex-direction: row"
+                >
+                  <input type="text" placeholder="Search..." />
+                  <button type="submit" class="dropdown_btn">Search</button>
+                </div>
+              </div>
+              <div class="dropdown_profile_button" id="dropdown_profile_button">
+                <a href="#" class="profile_button">
+                  <img
+                    src="./assets/images/avatar.png"
+                    class="avatar"
+                    alt=""
+                    srcset=""
+                    onclick="profile()"
+                  />
+                </a>
+                <div class="dropdown_menu profile_menu">
+                  <div class="profile_name">
+                    <img
+                      src="./assets/images/avatar.png"
+                      class="profile_picture_menu"
+                      alt=""
+                    />
+                    <div class="profile_desc">
+                      <h3 id="fullnameTitle">Lorik Rama</h3>
+                      <p class="profile_email">lorikrama07@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="profile_options">
+                    <a
+                      href="account-bookings.html"
+                      class="dropdown_item_profile"
+                      ><i class="fa-regular fa-bookmark"></i> My Bookings</a
+                    >
+
+                    <a href="settings.html" class="dropdown_item_profile"
+                      ><i class="fa-solid fa-gear"></i> Settings</a
+                    >
+                    <a href="delete-account.html" class="dropdown_item_profile"
+                      ><i class="fa-solid fa-circle-info"></i> Delete account</a
+                    >
+                    <a href="#" class="signout_button"
+                      ><i class="fa-solid fa-power-off"></i> Sign Out</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hotel">
+      <div class="container">
+        <div class="hotel_row">
+          <div class="left_titiles">
+            <h1>Brezovica Hotel & SPA</h1>
+            <p>Rr 210, Brezovicë, 38357 Brezovicë, Kosovo</p>
+            <div class="rating">
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+            </div>
+          </div>
+          <div class="price_div">
+            <p>Price starts at</p>
+            <h1 class="price">200&euro;</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="images_gallery">
+          <img src="./assets/brezovica images/1.jpg" alt="" />
+          <img src="./assets/brezovica images/2.jpg" alt="" />
+          <img src="./assets/brezovica images/3.jpg" alt="" />
+          <img src="./assets/brezovica images/4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <br /><br /><br />
+
+    <section id="footer">
+      <div class="container">
+        <div class="footer_rows">
+          <div class="footer_about_row">
+            <img src="./assets/images/logo-light.svg" alt="" />
+            <div class="footer_about_text">
+              <p>
+                Departure defective arranging rapturous did believe him all had
+                supported.
+              </p>
+              <p href="#"><i class="fa-solid fa-phone"></i>+383 44 547 028</p>
+              <p href="#">
+                <i class="fa-regular fa-envelope"></i>lorikrama07@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="forths_links_footer">
+            <div class="footer_page_row">
+              <h3>Pages</h3>
+              <br />
+              <a href="about.html">About us</a>
+              <a href="contact.html">Contact us</a>
+              <a href="account-bookings.html">Bookings</a>
+              <a href="coming-soon.html">Coming soon</a>
+            </div>
+            <div class="footer_links_row">
+              <h3>Links</h3>
+              <br />
+              <a href="signup.html">Sign up</a>
+              <a href="signin.html">Sign in</a>
+              <a href="about.html">About</a>
+              <a href="profile.html">Profile</a>
+            </div>
+            <!-- <div class="footer_global_row">
+                <h3>Global Sites</h3>
+                <br />
+                <p>India</p>
+                <p>California</p>
+                <p>Indonesia</p>
+                <p>Canada</p>
+                <p>Malasia</p>
+              </div> -->
+            <!-- <div class="footer_booking_row">
+                <h3>Booking</h3>
+                <br />
+                <a href="#"><i class="fa-solid fa-building"></i>Hotel</a>
+                <a href="#"><i class="fa-solid fa-plane"></i>Flight</a
+                ><a href="#"><i class="fa-solid fa-earth-americas"></i>Tour</a
+                ><a href="#"> <i class="fa-solid fa-car"></i>Cab </a>
+              </div> -->
+          </div>
+        </div>
+
+        <div class="footer_payment_follow_row">
+          <!-- <div class="payment_row">
+              <h3>Payment & Security</h3>
+              <div class="payment_img">
+                <img src="./assets/images/paypal.svg" alt="" />
+                <img src="./assets/images/visa.svg" alt="" />
+                <img src="./assets/images/mastercard.svg" alt="" />
+                <img src="./assets/images/expresscard.svg" alt="" />
+              </div>
+            </div> -->
+          <div class="follow_row">
+            <h3>Follow us on</h3>
+            <div class="follow_row_icons_footer">
+              <a href="https://www.facebook.com/lorik.rama.547/" class="fb">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/lorikramaa/" class="ig">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" class="tw">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/lorikramaa/" class="lk">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright_col">
+          <div class="first_col">
+            <p>
+              Copyrights <a href="#">&copy;2023 Lorik Rama</a>. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="second_col">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Refund policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="goto_top">
+      <a href="#navbar"> <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

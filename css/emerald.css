@@ -1,0 +1,39 @@
+.images_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.images_gallery img {
+  vertical-align: middle;
+  width: 50%;
+  height: auto;
+}
+.hotel_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+h1 {
+  color: #222222;
+}
+.price_div {
+  text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .images_gallery {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hotel_row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price_div {
+    text-align: left;
+  }
+
+  .images_gallery img {
+    width: 100%;
+  }
+}

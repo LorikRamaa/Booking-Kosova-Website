@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Multipurpose Online Booking Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="navbar">
+        <div class="container">
+          <div class="nav_container">
+            <div class="align">
+              <div class="first_div_nav">
+                <div class="logo">
+                  <img
+                    src="./assets/images/logo.svg"
+                    alt="logo"
+                    class="logo"
+                    srcset=""
+                  />
+                </div>
+                <div class="first_nav_links" id="first_nav_links">
+                  <div class="dropdown">
+                    <a href="#"
+                      >Pages<i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div class="dropdown_menu">
+                      <a href="about.html">About </a>
+                      <a href="contact.html">Contact </a>
+                      <a href="signin.html">Sign in</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a href="#"
+                      >Accounts<i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div class="dropdown_menu">
+                      <div class="submenu">
+                        <a href="#"
+                          >User Profile <i class="fa-solid fa-ellipsis"></i
+                        ></a>
+                        <div class="submenu_menu">
+                          <a href="profile.html">My Profile</a>
+                          <a href="account-bookings.html">My Bookings</a>
+                          <a href="settings.html">Settings</a>
+                          <a href="delete-account.html">Delete Profile</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="third_nav_links">
+                <button
+                  class="menu-toggler"
+                  id="menu_toggler"
+                  onclick="navbarToggle()"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="dropdown_notification" id="dropdown_notification">
+                  <a
+                    href="#"
+                    class="notification_button"
+                    onclick="notification() "
+                    ><i class="fa-regular fa-bell"></i>
+                    <span class="animation_blink"></span
+                  ></a>
+                  <div class="dropdown_menu notification_menu">
+                    <div class="title_notification">
+                      <h3>
+                        Notification
+                        <span class="new_notifications">4 new</span>
+                      </h3>
+                      <a href="#">Clear all</a>
+                    </div>
+                    <div class="first_notification">
+                      <h4>New! Booking flights from New York ✈️</h4>
+                      <p class="notification_text">
+                        Find the flexible ticket on flights around the world.
+                        Start searching today <br />
+                        <span>Wednesday</span>
+                      </p>
+                    </div>
+                    <div class="second_notification">
+                      <h4>
+                        Sunshine saving are here 🌞 save 30% or more on a stay
+                      </h4>
+                      <p class="notification_text">15 Nov 2022</p>
+                    </div>
+                    <div class="third_notification">
+                      <a href="#">See all incoming activity</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="dropdown_profile_button"
+                  id="dropdown_profile_button"
+                >
+                  <a href="#" class="profile_button">
+                    <img
+                      src="./assets/images/avatar.png"
+                      class="avatar"
+                      alt=""
+                      srcset=""
+                      onclick="profile()"
+                    />
+                  </a>
+                  <div class="dropdown_menu profile_menu">
+                    <div class="profile_name">
+                      <img
+                        src="./assets/images/avatar.png"
+                        class="profile_picture_menu"
+                        alt=""
+                      />
+                      <div class="profile_desc">
+                        <h3 id="fullnameTitle">Lorik Rama</h3>
+                        <p class="profile_email">lorikrama07@gmail.com</p>
+                      </div>
+                    </div>
+                    <div class="profile_options">
+                      <a
+                        href="account-bookings.html"
+                        class="dropdown_item_profile"
+                        ><i class="fa-regular fa-bookmark"></i> My Bookings</a
+                      >
+
+                      <a href="settings.html" class="dropdown_item_profile"
+                        ><i class="fa-solid fa-gear"></i> Settings</a
+                      >
+                      <a
+                        href="delete-account.html"
+                        class="dropdown_item_profile"
+                        ><i class="fa-solid fa-circle-info"></i> Delete
+                        Account</a
+                      >
+                      <a href="#" class="signout_button"
+                        ><i class="fa-solid fa-power-off"></i> Sign Out</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="upgrade_button">
+                  <a href="#"> <i class="fa-solid fa-bolt"></i> Upgrade Now</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mobile button profile-->
+    <div class="container">
+      <div
+        class="menu_toggler_profile"
+        id="menu_toggler_profile"
+        onclick="profileMenuMobile()"
+      >
+        <i class="fa-solid fa-sliders" onclick="profileMenuMobile()"
+          ><span>Menu</span></i
+        >
+      </div>
+    </div>
+
+    <main id="all_content">
+      <div class="container">
+        <div class="all_content">
+          <div class="profile_mobile_menu" id="profile_mobile_menu">
+            <section id="profile_card">
+              <i class="fa-solid fa-xmark" onclick="profileMenuMobile()"></i>
+
+              <div class="profile_card">
+                <div class="image_container">
+                  <img src="./assets/images/avatar.png" alt="" />
+                  <div class="card_desc">
+                    <h3>Lorik Rama</h3>
+                    <a href="#" class="helloemail">lorikrama07@gmail.com</a>
+                  </div>
+                </div>
+                <div class="profile_links">
+                  <a href="profile.html"
+                    ><i class="fa-regular fa-user"></i> My Profile</a
+                  >
+                  <a href="account-bookings.html"
+                    ><i class="fa-solid fa-ticket"></i> My Bookings</a
+                  >
+                  <a href="payment.html"
+                    ><i class="fa-solid fa-ticket"></i> Payment</a
+                  >
+                  <a href="settings.html" class="profile_active"
+                    ><i class="fa-solid fa-gear"></i>Settings</a
+                  >
+                  <a href="delete-account.html"
+                    ><i class="fa-solid fa-trash-can"></i>Delete Profile</a
+                  >
+                  <a href="#" class="color_red"
+                    ><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="body_overlay" id="body_overlay"></div>
+          <div class="personal_information_delete">
+            <div class="personal_information_content">
+              <h1 class="pi_title">Security settings</h1>
+              <div class="delete-data">
+                <h3>Two-factor authentication</h3>
+                <p>Add a phone number to set up two-factor authentication</p>
+                <input
+                  type="text"
+                  name="enternumber"
+                  id="enternumber"
+                  placeholder="Enter your mobile number"
+                />
+                <div class="sendcode">Send Code</div>
+                <h3>Two-factor authentication</h3>
+                <p>Add a phone number to set up two-factor authentication</p>
+                <div class="signout">Sign Out</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
